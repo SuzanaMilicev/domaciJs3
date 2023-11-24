@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Predavanje 10 - Zadatak 1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="colorful">
+    <div class="container text-center">
+        <div class="py-3 border-bottom">
+            <button class="btn btn-success" onclick="welcome()">Click me!</button>
+        </div>
+
+        <div class="py-3 border-bottom">
+            <p id="changeText">Hi.</p>
+            <button class="btn btn-primary" onclick="changeText()">Change text</button>
+        </div>
+
+        <div class="py-3 border-bottom">
+            <img src="images/hello.jpg" alt="hello" class="image-style" onmouseover="changeImg()" id="img">
+        </div>
+
+        <div class="py-3 border-bottom">
+            <form>
+                <input id="Male" name="gender" type="radio" value="V1" />
+                <label for="Male">Male</label>
+                <br>
+                <input id="Female" name="gender" type="radio" value="V2" />
+                <label for="Female">Female</label>
+                <br>
+                <button class="btn btn-success" id="Button1" type="button" onclick="testRadio()">Check selected
+                    Gender</button>
+                <br>
+                <span id="span1"></span>
+            </form>
+        </div>
+
+        <div class="py-3 border-bottom">
+            <form>
+                <label for="firstname">First name:</label>
+                <input type="text" class="form-control mt-2 mb-3" id="firstname" placeholder="Your first name">
+
+                <label for="lastname">Last name:</label>
+                <input type="text" class="form-control mt-2 mb-3" id="lastname" placeholder="Your last name">
+
+                <label for="animal">Your favourite animal:</label>
+                <input type="text" class="form-control mt-2 mb-3" id="animal" placeholder="Your favourite animal">
+
+                <button type="submit" class="btn btn-primary mb-2" onclick="newlocation()">Submit</button> <br>
+                <button type="submit" class="btn btn-primary">Show input</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="jsFile.js"></script>
+</body>
+
+</html>
