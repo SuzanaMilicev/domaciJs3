@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Predavanje 10 - Zadatak 1</title>
@@ -9,7 +9,7 @@
 </head>
 
 <body class="colorful">
-    <div class="container text-center">
+    <div class="container text-center col-12">
         <div class="py-3 border-bottom">
             <button class="btn btn-success" onclick="welcome()">Click me!</button>
         </div>
@@ -50,7 +50,8 @@
                 <input type="text" class="form-control mt-2 mb-3" id="animal" placeholder="Your favourite animal">
 
                 <button type="submit" class="btn btn-primary mb-2" onclick="newlocation()">Submit</button> <br>
-                <button type="submit" class="btn btn-primary">Show input</button>
+                <button type="submit" class="btn btn-primary" onclick="showinput()" id="btn">Show input</button> <br>
+                <span id="span2"></span>
             </form>
         </div>
 

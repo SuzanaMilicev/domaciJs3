@@ -55,3 +55,11 @@ function newlocation() {
 function oldlocation() {
     window.history.back();
 }
+
+function showinput() {
+    let inputValue1 = document.getElementById("firstname").value; 
+    let inputValue2 = document.getElementById("lastname").value; 
+    let inputValue3 = document.getElementById("animal").value; 
+
+    document.getElementById("span2").innerHTML = inputValue1 + "<br>" + inputValue2 + "<br>" + inputValue3;
+  }
