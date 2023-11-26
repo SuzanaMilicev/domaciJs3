@@ -57,9 +57,11 @@ function oldlocation() {
 }
 
 function showinput() {
-    let inputValue1 = document.getElementById("firstname").value; 
-    let inputValue2 = document.getElementById("lastname").value; 
-    let inputValue3 = document.getElementById("animal").value; 
-
-    document.getElementById("span2").innerHTML = inputValue1 + "<br>" + inputValue2 + "<br>" + inputValue3;
-  }
+    var input = document.getElementsByClassName("type-input");
+    let message = "";
+    for(let i = 0; i < input.length; i++){
+        message += input[i].value + "<br>";
+    }
+    let textLabel = document.getElementById("span2");
+    textLabel.innerHTML = message;
+}
